@@ -1,0 +1,62 @@
+.container {
+    background-color: aliceblue;
+    border: black solid 5px;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+}
+
+.jumbotron {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+.button {
+    border: none;
+    width: 250px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #3d72b4;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.container2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+}
+
+
+.jumbotron2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+    border: black solid 5px;
+    margin: auto;  
+    padding: 20px;
+    text-align: left;
+}
+
+body {
+    background-image: url("CuriosityBlue.png");
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+}
+
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(60, 60, 60);
+}
+
+h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+}

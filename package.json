@@ -1,0 +1,23 @@
+{
+  "name": "FriendFinder",
+  "version": "1.0.0",
+  "description": "Friend Finder Homework - New Best Friend Dog Breed Matchup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avleathers/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avleathers/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/avleathers/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

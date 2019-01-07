@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Best Friend Finder</title>
+
+    <!-- Link to Bootstap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <!-- Link to jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1><strong>Survey Questions</strong></h1>
+        <hr>
+
+        <div class="jumbotron2">
+
+            <h2><strong>About You</strong></h2>
+            <h3>Name (Required)</h3>
+            <input type="text" id="name" class="form-control" required>
+
+            <h3>Link to Photo Image (Required)</h3>
+            <input type="text" id="photo" class="form-control" required>
+
+            <hr>
+
+            <h2><strong>Question 1</strong></h2>
+
+            <h3>What size dog are you looking for?</h3>
+
+            <select class="chosen-select" id="q1">
+                <option value=""></option>
+                <option value="1">1 (Tiny - up to 11 lbs.)</option>
+                <option value="2">2 (Small - 12 to 22 lbs.)</option>
+                <option value="3">3 (Medium 23 to 44 lbs.)</option>
+                <option value="4">4 (Large 45 to 88 lbs.)</option>
+                <option value="5">5 (Extrea Large 89 to 140+ )</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 2</strong></h2>
+
+            <h3>How energetic do you want your new dog to be?</h3>
+
+            <select class="chosen-select" id="q2">
+                <option value=""></option>
+                <option value="1">1 (A sprinter)</option>
+                <option value="2">2 (A jogger)</option>
+                <option value="3">3 (Enjoys long walks)</option>
+                <option value="4">4 (Selectively energetic)</option>
+                <option value="5">5 (Couch potato)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 3</strong></h2>
+
+            <h3>How much time can you devote to exercising your dog daily?</h3>
+
+            <select class="chosen-select" id="q3">
+                <option value=""></option>
+                <option value="1">1 (Over an hour)</option>
+                <option value="2">2 (30 - 45 minutes)</option>
+                <option value="3">3 (20 - 30 minutes)</option>
+                <option value="4">4 (10 - 20 minutes)</option>
+                <option value="5">5 (Occasionally playing ball)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 4</strong></h2>
+
+            <h3>How often will you be able to play with your dog?</h3>
+
+            <select class="chosen-select" id="q4">
+                <option value=""></option>
+                <option value="1">1 (All day long)</option>
+                <option value="2">2 (Several times a day)</option>
+                <option value="3">3 (A few times a day)</option>
+                <option value="4">4 (Maybe once a day)</option>
+                <option value="5">5 (Not much)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 5</strong></h2>
+
+            <h3>How affectionate would you like your dog to be?</h3>
+
+            <select class="chosen-select" id="q5">
+                <option value=""></option>
+                <option value="1">1 (Total love bug, never leaves my side)</option>
+                <option value="2">2 (Gives me a lot of love when I get home, then settles down)</option>
+                <option value="3">3 (Acknowledges my presence but keeps to him/herself most of the time)</option>
+                <option value="4">4 (I'm looking for more of a roomate than a companion)</option>
+                <option value="5">5 (Completely aloof)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 6</strong></h2>
+
+            <h3>Do you have other pets?</h3>
+
+            <select class="chosen-select" id="q6">
+                <option value=""></option>
+                <option value="1">1 (Yes, so it is important that my new dog can live amongst other animals)</option>
+                <option value="2">2 (No, but I plan on having my dog interact with other animals so he needs to be
+                    friendly)</option>
+                <option value="3">3 (No, friendliness towards other animals isn't a top priority)</option>
+                <option value="4">4 (No, I am looking for a guard dog so friendliness towards other animals is not
+                    important)</option>
+                <option value="5">5 (Not important)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 7</strong></h2>
+
+            <h3>How trainable would you like your dog to be?</h3>
+
+            <select class="chosen-select" id="q7">
+                <option value=""></option>
+                <option value="1">1 (Very trainable. I plan to teach him/her to compete in obedience trials)</option>
+                <option value="2">2 (Trainable. I plan to teach him/her basic commands, plus a lot of fun tricks)</option>
+                <option value="3">3 (Fairly trainable. He/she needs to know all the basic commands)</option>
+                <option value="4">4 (Not very trainable. I have a laid-back approach to rules and commands)</option>
+                <option value="5">5 (Not important)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 8</strong></h2>
+
+            <h3>How protective do you want your new dog to be?</h3>
+
+            <select class="chosen-select" id="q8">
+                <option value=""></option>
+                <option value="1">1 (Extremely protective. I am looking for a round-the-clock watchdog)</option>
+                <option value="2">2 (Somewhat protective. I am looking for a protector, but not a guard dog)</option>
+                <option value="3">3 (Selectively protective. I am looking for a dog that will alert me and deter
+                    intruders)</option>
+                <option value="4">4 (Little to no protection needed)</option>
+                <option value="5">5 (Not important)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 9</strong></h2>
+
+            <h3>How much maintenance and grooming are you able to provide for your dog?</h3>
+
+            <select class="chosen-select" id="q9">
+                <option value=""></option>
+                <option value="1">1 (I am able to groom my dog daily as well as use a groomer monthly)</option>
+                <option value="2">2 (I am able to groom my dog 3 - 4 times a week as well as use a groomer every 6 - 8
+                    weeks)</option>
+                <option value="3">3 (I am able to groom my dog 2 - 3 times a week as well as use a groomer
+                    occasionally)</option>
+                <option value="4">4 (I want a dog that is as low maintenance as possible)</option>
+                <option value="5">5 (Not important)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h2><strong>Question 10</strong></h2>
+
+            <h3>What kind of temperature tolerance does your new dog need to have?</h3>
+
+            <select class="chosen-select" id="q10">
+                <option value=""></option>
+                <option value="1">1 (I live in a warm climate)</option>
+                <option value="2">2 (I live in a cold climate)</option>
+                <option value="3">3 (I live in a area with four seasons)</option>
+                <option value="4">4 (I live in a very temperate climate that is rarely hot or cold)</option>
+                <option value="5">5 (Not important)</option>
+            </select>
+        </div>
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+
+        <button data-target="modal1" class="button" id="submitBtn">
+            <i class="fa fa-check-circle" aria-hidden="true">
+            </i>
+            <h4>Submit</h4>
+        </button>
+
+        <hr>
+        <div class="footer">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/avleathers/friendfinder">GitHub
+                    Repo</a></p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modalDialog">
+
+            <!-- Modal content-->
+            <div class="modalContent">
+                <div class="modalHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <h2 class="modalTitle"><strong>Best Friend Match</strong></h2>
+                </div>
+                <div class="modalBody text-center">
+                    <h4>Meet Your New Best Friend!</h4>
+                    <h5 id="matchName"></h5>
+                    <img id="matchImage" src="" alt="No Image">
+                </div>
+                <div class="modalFooter">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <!-- <p><a href="/api/friends">API Best Friends List</a> | <a href="https://github.com/avleathers/friendfinder">GitHub
+                            Repo</a></p> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        // Capture the form inputs
+        $("#submitBtn").on("click", function (event) {
+            event.preventDefault();
+
+            //Set local variables
+            var matchStatus = $(".modalTitle");
+            var modalBody = $(".modalBody");
+
+            //set responses to local variables
+            var name = $("#name").val().trim();
+            var photo = $("#photo").val().trim();
+            var q1 = parseInt($("q1").val());
+            var q2 = parseInt($("q2").val());
+            var q3 = parseInt($("q3").val());
+            var q4 = parseInt($("q4").val());
+            var q5 = parseInt($("q5").val());
+            var q6 = parseInt($("q6").val());
+            var q7 = parseInt($("q7").val());
+            var q8 = parseInt($("q8").val());
+            var q9 = parseInt($("q9").val());
+            var q10 = parseInt($("q01").val());
+
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                })
+                return isValid;
+            }
+
+            // If all required fields are filled
+            if (validateForm()) {
+                // Set data to be sent to server
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                // Grabs current URL of website
+                var currentURL = window.location.origin;
+
+                // AJAX post the data to the friends API.
+                $.post("/api/friends", userData, function (data) {
+
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#matchName").text(data.name);
+                    $("#matchImage").attr("src", data.photo);
+
+                });
+                // Show the modal with the best match
+                $("#resultsModal").modal();
+                alert("Working!");
+
+                //clear form after submission
+                $('#name').val("");
+                $('#photo').val("");
+                $('#q1').val("");
+                $('#q2').val("");
+                $('#q3').val("");
+                $('#q4').val("");
+                $('#q5').val("");
+                $('#q6').val("");
+                $('#q7').val("");
+                $('#q8').val("");
+                $('#q9').val("");
+                $('#q10').val("");
+            } else {
+                alert("Please fill ut all fields before submitting!");
+            }
+            return false;
+        });
+
+    </script>
+
+</body>
+
+</html>
