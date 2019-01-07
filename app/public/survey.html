@@ -230,7 +230,6 @@
             <!-- Modal content-->
             <div class="modalContent">
                 <div class="modalHeader">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button> -->
                     <h2 class="modalTitle"><strong>Best Friend Match</strong></h2>
                 </div>
                 <div class="modalBody text-center">
@@ -239,15 +238,36 @@
                     <img id="matchImage" src="" alt="No Image">
                 </div>
                 <div class="modalFooter">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <!-- <p><a href="/api/friends">API Best Friends List</a> | <a href="https://github.com/avleathers/friendfinder">GitHub
-                            Repo</a></p> -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
         </div>
     </div>
 
+    <!-- Modal from Bootstrap -->
+
+    <!-- <div class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- End of Modal from Bootstrap -->
 
 
     <script type="text/javascript">
@@ -318,13 +338,17 @@
                 $.post("/api/friends", userData, function (data) {
 
                     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-                    $("#matchName").text(data.name);
-                    $("#matchImage").attr("src", data.photo);
+                    $("#matchName").text(data.matchName);
+                    $("#matchImage").attr("src", data.matchImage);
 
                 });
                 // Show the modal with the best match
                 $("#resultsModal").modal();
                 alert("Working!");
+
+                // $('#resultsModal').on('shown.bs.modal', function () {
+                //     $('#myInput').trigger('focus')
+                // })
 
                 //clear form after submission
                 $('#name').val("");
@@ -340,7 +364,7 @@
                 $('#q9').val("");
                 $('#q10').val("");
             } else {
-                alert("Please fill ut all fields before submitting!");
+                alert("Please fill out all fields before submitting!");
             }
             return false;
         });
