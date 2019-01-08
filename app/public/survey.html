@@ -223,12 +223,12 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div id="resultsModal" class="modal fade" role="dialog">
-        <div class="modalDialog">
+    <!-- Modal - Missy's version-->
+    <!-- <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modalDialog"> -->
 
             <!-- Modal content-->
-            <div class="modalContent">
+            <!-- <div class="modalContent">
                 <div class="modalHeader">
                     <h2 class="modalTitle"><strong>Best Friend Match</strong></h2>
                 </div>
@@ -243,29 +243,31 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
+    <!-- End of Missy's version -->
 
     <!-- Modal from Bootstrap -->
 
-    <!-- <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
+              <h5 class="modal-title">Meet your new best friend!</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
+            <!-- <div class="modal-body"> -->
+              <h4>Meet Your New Best Friend!</h4>
+                    <h5 id="matchName"></h5>
+                    <img id="matchImage" src="" alt="No Image">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- End of Modal from Bootstrap -->
 
@@ -277,8 +279,8 @@
             event.preventDefault();
 
             //Set local variables
-            var matchStatus = $(".modalTitle");
-            var modalBody = $(".modalBody");
+            var matchStatus = $(".modal-title");
+            var modalBody = $(".modal-body");
 
             //set responses to local variables
             var name = $("#name").val().trim();
@@ -343,7 +345,7 @@
 
                 });
                 // Show the modal with the best match
-                $("#resultsModal").modal();
+                $(".modal").modal();
                 alert("Working!");
 
                 // $('#resultsModal').on('shown.bs.modal', function () {
