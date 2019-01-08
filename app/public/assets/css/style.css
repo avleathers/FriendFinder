@@ -61,9 +61,21 @@ h4 {
     color: aliceblue;
 }
 
+h5 {
+    text-align: center;
+}
+
 .modal {
     background-image: url("CuriosityBlue.png");
     background-repeat: repeat-x;
     background-repeat: repeat-y;
     text-align: center;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+#matchImage {
+    width: 100%;
 }
