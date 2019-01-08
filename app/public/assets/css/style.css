@@ -61,8 +61,9 @@ h4 {
     color: aliceblue;
 }
 
-#resultsModal {
+.modal {
     background-image: url("CuriosityBlue.png");
     background-repeat: repeat-x;
     background-repeat: repeat-y;
+    text-align: center;
 }
