@@ -46,8 +46,7 @@
 
 body {
     background-image: url("CuriosityBlue.png");
-    /* background-repeat: repeat-x;
-    background-repeat: repeat-y; */
+    background-repeat: round;
     width: 100%;
 }
 
