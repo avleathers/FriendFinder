@@ -19,5 +19,6 @@
   "homepage": "https://github.com/avleathers/FriendFinder#readme",
   "dependencies": {
     "express": "^4.16.4"
-  }
+  },
+  "heroku-run-build-script": true
 }
