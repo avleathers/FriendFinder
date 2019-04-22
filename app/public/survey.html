@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
@@ -215,7 +215,7 @@
 
         <hr>
         <div class="footer">
-            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/avleathers/friendfinder">GitHub
+            <p><a href="../data/friends.js">API Friends List</a> | <a href="https://github.com/avleathers/friendfinder">GitHub
                     Repo</a></p>
         </div>
     </div>
@@ -256,8 +256,8 @@
             var modalBody = $(".modal-body");
 
             //set responses to local variables
-            var name = $("#name").val().trim();
-            var photo = $("#photo").val().trim();
+            var name = $("#name").val();
+            var photo = $("#photo").val();
             var q1 = parseInt($("q1").val());
             var q2 = parseInt($("q2").val());
             var q3 = parseInt($("q3").val());
